@@ -1,4 +1,4 @@
-FROM nvidia/cuda:12.4-devel-ubuntu22.04
+FROM nvidia/cuda:11.8-devel-ubuntu20.04
 RUN apt update && apt install -y git curl python3-pip ffmpeg build-essential \
     libpq-dev libopenblas-dev libsndfile1-dev cmake pkg-config rustc cargo
 RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
